@@ -5,23 +5,27 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+
 
 public class DialogBoxFragment extends Fragment {
 
-   /* final Context context = this;
-    private Button button;*/
+    Button mShowDialog;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-      /*  // Inflate the layout for this fragment
-        getDialog().setTitle("Simple Dialog");*/
+
+        mShowDialog = (Button) this.getActivity().findViewById(R.id.btnShowDialog);
+
+
+        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_dialog_box, container, false);
     }
+
+
+
+
 }
