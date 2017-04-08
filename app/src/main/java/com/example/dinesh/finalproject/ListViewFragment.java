@@ -19,7 +19,7 @@ public class ListViewFragment extends Fragment {
         View mView = inflater.inflate(R.layout.fragment_list_view, container, false);
 
 
-        String[] items = {"One", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve" +
+        String[] items = {"One", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
                 "thirteen", "fourteen","fifteen","sixteen", "seventeen", "eighteen", "nineteen", "twenty" };
 
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getActivity(),
@@ -29,10 +29,8 @@ public class ListViewFragment extends Fragment {
         lv.setAdapter(itemsAdapter);
 
 
-
         return mView;
 
     }
-
 
 }
