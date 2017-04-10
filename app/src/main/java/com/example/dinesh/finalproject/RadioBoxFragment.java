@@ -10,35 +10,44 @@ import android.widget.RadioGroup;
 import butterknife.BindView;
 import butterknife.OnClick;
 
+import static com.example.dinesh.finalproject.R.id.dialog_OK;
+
 public class RadioBoxFragment extends Fragment {
 
     private int checkedID;
     private final int DIALOG = 12345;
 
-
     @BindView(R.id.rdg)
 
     RadioGroup radioGroup;
 
-    @OnClick(R.id.dialog_OK)
+    @OnClick(dialog_OK)
     public void okClick() {
         switch (checkedID) {
-            case R.id.radio_pirates:
+            case R.id.button1:
 
                 break;
-            case R.id.radio_ninjas:
+            case R.id.button2:
 
+                break;
+            case R.id.button3:
+
+                break;
             case R.id.dialog_CANCEL:
-
+                cancelDialog();
                 break;
-            case R.id.dialog_OK:
-
-                break;
-
-
         }
 
+
+
     }
+
+    private void cancelDialog() {
+
+    }
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
