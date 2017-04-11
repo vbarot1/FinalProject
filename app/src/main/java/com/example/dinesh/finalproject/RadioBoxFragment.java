@@ -34,19 +34,13 @@ public class RadioBoxFragment extends Fragment {
 
                 break;
             case R.id.dialog_CANCEL:
-                cancelDialog();
+
                 break;
         }
 
 
 
     }
-
-    private void cancelDialog() {
-
-    }
-
-
 
 
     @Override

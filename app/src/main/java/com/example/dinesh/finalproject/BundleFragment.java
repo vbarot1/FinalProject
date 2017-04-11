@@ -17,26 +17,7 @@ public class BundleFragment extends DialogFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //getActivity().setContentView(R.layout.fragment_bundle);
 
-
-
-
-
-
-
-        /*final EditText et = (EditText) getActivity().findViewById(R.id.editText_name);
-        Button sendButton = (Button) getActivity().findViewById(R.id.button_send);
-
-        sendButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final EditText et = (EditText) getActivity().findViewById(R.id.editText_name);
-                String userData = userTextEntry.getText().toString();
-
-
-            }
-        });*/
     }
 
     @Override
@@ -64,17 +45,11 @@ public class BundleFragment extends DialogFragment {
 
     }
 
-    /*@Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       /* getDialog().setTitle("Simple Dialog");*/
         return inflater.inflate(R.layout.fragment_bundle, container, false);
     }
 
