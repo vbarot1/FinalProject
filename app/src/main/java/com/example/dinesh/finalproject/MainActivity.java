@@ -35,7 +35,6 @@ public class MainActivity extends FragmentActivity {
 
 }
 
-
 class PageFragmentAdapter extends FragmentStatePagerAdapter {
 
     public PageFragmentAdapter(FragmentManager fm) {
@@ -51,8 +50,10 @@ class PageFragmentAdapter extends FragmentStatePagerAdapter {
             return new DialogBoxFragment();
         } else if (position == 2) {
             return new RadioBoxFragment();
-        } else if (position == 3){
+        } else if (position == 3) {
             return new BundleFragment();
+        } else if (position == 4) {
+            return new AnimationFragment();
         }else {
             return new ViewFragment();
         }
@@ -60,6 +61,6 @@ class PageFragmentAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 4; //how many slides we want
+        return 5; //how many slides we want
     }
 }
